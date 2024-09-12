@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaT-do-BQd">
-                                <rect key="frame" x="145" y="409" width="104" height="35"/>
+                                <rect key="frame" x="124" y="409" width="146" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="メモをする"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ToDoを作成する"/>
                                 <connections>
                                     <segue destination="1FW-g7-lXS" kind="show" id="rYd-rV-cTe"/>
                                 </connections>
@@ -50,11 +50,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h2P-8A-zbu">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Example" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h2P-8A-zbu">
                                 <rect key="frame" x="16" y="362" width="361" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -79,7 +78,7 @@
             </objects>
             <point key="canvasLocation" x="2752" y="4"/>
         </scene>
-        <!--Memo Collection View Controller-->
+        <!--ToDoリスト-->
         <scene sceneID="OgC-hd-UOv">
             <objects>
                 <viewController id="1FW-g7-lXS" customClass="MemoCollectionViewController" customModule="MemoPad" customModuleProvider="target" sceneMemberID="viewController">
@@ -112,7 +111,7 @@
                         <viewLayoutGuide key="safeArea" id="0NC-sd-mkm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="nf8-JW-xLd">
+                    <navigationItem key="navigationItem" title="ToDoリスト" id="nf8-JW-xLd">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Yde-15-pn2">
                             <connections>
                                 <segue destination="Hl7-pv-bji" kind="show" id="IbA-Zz-ajl"/>

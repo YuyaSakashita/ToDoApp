@@ -25,7 +25,7 @@ class MemoCollectionViewController: UIViewController,UICollectionViewDataSource 
         
         contentConfiguration.secondaryText = contents[indexPath.item]
         // サブタイトルを設定する
-        contentConfiguration.secondaryText = "コレクションビューを勉強している"
+        //contentConfiguration.secondaryText = "コレクションビューを勉強している"
         // セルの設定を更新する
         cell.contentConfiguration = contentConfiguration
         // セルの設定を完了する

@@ -47,7 +47,7 @@ class MemoViewController: UIViewController, UITextFieldDelegate{
         saveData.set(titles, forKey: "titles")
         saveData.set(contents, forKey: "contents")
         
-        let alert: UIAlertController = UIAlertController(title: "保存", message: "メモの保存が完了しました。", preferredStyle: .alert)
+        let alert: UIAlertController = UIAlertController(title: "保存", message: "ToDoの保存が完了しました。", preferredStyle: .alert)
         
         alert.addAction(
             UIAlertAction(title: "OK", style: .default, handler:{ action in
